@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Venta</title>
+</head>
+<body>
+<h2>Registro de Venta</h2>
+<form action="/ventas/registrar" method="post">
+  <label for="cliente">Cliente:</label><br>
+  <select id="cliente" name="cliente">
+    <!-- Opciones de clientes cargadas dinámicamente desde la base de datos -->
+  </select><br>
+  <label for="producto">Producto:</label><br>
+  <select id="producto" name="producto">
+    <!-- Opciones de productos cargadas dinámicamente desde la base de datos -->
+  </select><br>
+  <label for="cantidad">Cantidad:</label><br>
+  <input type="number" id="cantidad" name="cantidad"><br><br>
+  <input type="submit" value="Registrar Venta">
+</form>
+</body>
+</html>
